@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alta Skin Whitening System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@700&family=Kaisei+Opti:wght@700&display=swap" rel="stylesheet">
+  
+  <style>
+  
+	#logo{
+		float: left;
+		margin-left: 50px;
+		width: 115px;
+		height: 100px;
+	}
+	
+	/*Testimonials*/
+
+	.review{
+		width: 100%;
+		height: 100vh;
+		padding: 70px 0;
+	}
+
+	.review h1{
+		font-size: 55px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.review h1 span{
+		margin-left: 15px;
+		color: #fac031;
+		font-family: mv boli;
+	}
+
+	.review h1 span::after{
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: #fac031;
+		position: relative;
+		bottom: 15px;
+		display: block;
+	}
+
+	.review .review_box{
+		width: 95%;
+		margin: 70px auto;
+		display: flex;
+	}
+
+	.review .review_box .review_card{
+		width: 350px;
+		height: 535px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+		border-radius: 8px;
+		padding: 8px 20px;
+		margin: 0 8px;
+	}
+
+	.review .review_box .review_card .review_profile{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		transition: 0.3s;
+	}
+
+	.review .review_box .review_card:hover .review_profile{
+		transform: translateY(-60px);
+	}
+
+	.review .review_box .review_card .review_profile img{
+		width: 180px;
+		height: 180px;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 50%;
+		border: 5px solid #cccccc;
+	}
+
+	.review .review_box .review_card .review_text{
+		text-align: center;
+	}
+
+	.review .review_box .review_card .review_text .name{
+		color: #000;
+		transition: 0.3s;
+	}
+
+	.review .review_box .review_card:hover .review_text .name{
+		transform: translateY(-50px);
+	}
+
+	.review .review_box .review_card .review_text .review_icon{
+		color: #fac031;
+		transition: 0.3s;
+	}
+
+	.review .review_box .review_card:hover .review_text .review_icon{
+		transform: translateY(-30px);
+	}
+
+	.review .review_box .review_card .review_text .review_social i{
+		margin: 5px 1px;
+		font-size: 15px;
+		opacity: 0;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	.review .review_box .review_card:hover .review_text .review_social i{
+		opacity: 1;
+		transform: translateY(-8px);
+	}
+
+	.review .review_box .review_card .review_text p{
+		text-align: center;
+		line-height: 22px;
+		transition: 0.3s;
+	}
+
+	.review .review_box .review_card:hover .review_text p{
+		margin-top: 5px;
+	}
+
+	/*Footer*/
+
+	footer{
+		width: 100%;
+		padding: 30px 0 0 20px;
+		background: #eeeeee;
+	}
+
+	footer .footer_main{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	footer .footer_main .footer_tag{
+		text-align: center;
+	}
+
+	footer .footer_main .footer_tag h2{
+		color: #000;
+		margin-bottom: 25px;
+		font-size: 30px;
+	}
+
+	footer .footer_main .footer_tag p{
+		margin: 10px 0;
+	}
+
+	footer .footer_main .footer_tag i{
+		margin: 0 5px;
+		cursor: pointer;
+	}
+
+	footer .footer_main .footer_tag i:hover{
+		color: #fac031;
+	}
+
+	footer .end{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+	}
+
+	footer .end span{
+		color: #fac031;
+		margin-left: 10px;
+	}
+
+	::-webkit-scrollbar{
+		width: 13px;
+	}
+
+	::-webkit-scrollbar-track{
+		border-radius: 15px;
+		box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+	}
+
+	::-webkit-scrollbar-thumb{
+		background: #fac031;
+		border-radius: 15px;
+	}
+	
+ </style>
+  </head>
+  
+  <body onload="myFunction()" style="margin:0;">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" color: #ff0096;>
+    <img src="logonobg.png" alt="logonobg" id="logo">
+	
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+	
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ratings.html">Ratings</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="branches.html">Branches</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+    <div class="review" id="Review">
+        <br><br><br><h1>Feedback</h1>
+
+        <div class="review_box">
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="alta3.3.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">jhon</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    "I've been using this website to buy Dota 2 items for years, and I couldn't be happier with their service. Their selection of items is fantastic, and the prices are always fair. Whenever I've had any issues, their customer service team has been quick to respond and resolve any problems. Highly recommended!"                    </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="alta1.1.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">zul</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+Alta skin care system does not only cares about our beauty but also on our Wellness, because it's all natural active ingredients with the powerful combination of niacinamide and dermawhite, our skin will be in a good quality products yet in affordable price for everyone specially those who are experiencing skin problems and to prevent skin disorders occur.Alta skin care is the solution for healthy white glow skin from within                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="alta4.4.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">maria</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+I highly recommend Alta’s skincare set! At first syempre andun yung fear mo sa mga rejuvenating set pero nung natry ko toh grabe sobrang mild, sa sabon pa lang walang hapdi tapos hindi pa nagpepeel. Life changing kasi naggain ulit ako ng confidence at ang gaan na ng feeling ng face ko 🥰🥰 Thank you so much Alta! The best kayo!                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="alta2.2.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">pamela</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+super bango at super mild lang talaga sa skin pero super effective! talagang achieved na achieved ang kutis alta, gandang alta! 😍                </div>
+
+            </div>
+
+        </div>
+
+    </div><br><br><br><br>
+
+    </body>
+	</html>

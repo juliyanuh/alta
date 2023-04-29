@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alta Skin Whitening System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@700&family=Kaisei+Opti:wght@700&display=swap" rel="stylesheet">
+  
+  <style>
+  
+	#logo{
+		float: left;
+		margin-left: 50px;
+		width: 115px;
+		height: 100px;
+	}
+	
+	section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+	}
+
+	section .main .men_text h1{
+		font-size: 60px;
+		position: relative;
+		top: 50px;
+		left: 20px;
+	}
+
+	section .main .men_text h1 span{
+		margin-left: 15px;
+		color: #fac031;
+		font-family: mv boli;
+		line-height: 22px;
+		font-size: 70px;
+	}
+
+	section .main .main_image img{
+		width: 400px;
+		position: relative;
+		left: 500px;
+		height: 300px;
+	}
+
+	section p{
+		width: 650px;
+		text-align: justify;
+		position: relative;
+		left: 123px;
+		bottom: 120px;
+		line-height: 22px;
+	}
+
+	section .main_btn{
+		background: #fac031;
+		position: relative;
+		left: 123px;
+		bottom: 30px;
+		width: 150px;
+		cursor: pointer;
+		padding: 12px 25px;
+	}
+
+	section .main_btn a{
+		color: #fff;
+		margin-right: 5px;
+		text-decoration: none;
+	}
+
+	section .main_btn i{
+		color: #fff;
+		transition: 0.3s;
+	}
+
+	section .main_btn:hover i{
+		transform: translateX(7px);
+	}
+
+
+
+	/*About*/
+
+	.about{
+		width: 100%;
+		height: 100vh;
+		padding: 70px 0;
+	}
+
+	.about .about_main{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.about .about_main .image img{
+		width: 800px;
+		position: relative;
+		top: 60px;
+	}
+
+	.about .about_main .about_text h1 span{
+		color: #fac031;
+		margin-right: 15px;
+		font-family: mv boli;
+	}
+
+	.about .about_main .about_text h1{
+		font-size: 55px;
+		position: relative;
+		bottom: 50px;
+	}
+
+	.about .about_main .about_text h3{
+		font-size: 30px;
+		margin: 0 0 50px 0;
+	}
+
+	.about .about_main .about_text p{
+		width: 650px;
+		text-align: justify;
+		margin-right: 30px;
+		line-height: 22px;
+	}
+
+	.about .about_btn{
+		background: #fac031;
+		padding: 12px 25px;
+		text-decoration: none;
+		color: #fff;
+		position: relative;
+		left: 55%;
+		bottom: 30px;
+	}
+
+
+
+	/*Product*/
+
+	.menu{
+		width: 100%;
+		padding: 70px 0;
+	}
+
+	.menu h1{
+		font-size: 55px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	.menu h1 span{
+		color: #fac031;
+		margin-left: 15px;
+		font-family: mv boli;
+	}
+
+	.menu h1 span::after{
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: #fac031;
+		display: block;
+		position: relative;
+		bottom: 15px;
+	}
+
+	.menu .menu_box{
+		width: 95%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 15px;
+	}
+
+	.menu .menu_box .menu_card{
+		width: 325px;
+		height: 480px;
+		padding-top: 10px;
+		margin-bottom: 20px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	}
+
+	.menu .menu_box .menu_card .menu_image{
+		width: 300px;
+		height: 245px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.menu .menu_box .menu_card .menu_image img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		transition: 0.3s;
+	}
+
+	.menu .menu_box .menu_card .menu_image:hover img{
+		transform: scale(1.1);
+	}
+
+	.menu .menu_box .menu_card .small_card{
+		width: 45px;
+		height: 45px;
+		float: right;
+		position: relative;
+		top: -240px;
+		right: -8px;
+		opacity: 0;
+		border-radius: 7px;
+		transition: 0.3s;
+	}
+
+	.menu .menu_box .menu_card:hover .small_card{
+		position: relative;
+		top: -240px;
+		right: 20px;
+		opacity: 1;
+	}
+
+	.menu .menu_box .menu_card .small_card i{
+		font-size: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 50px;
+		color: #000;
+		cursor: pointer;
+		text-shadow: 0 0 6px #000;
+		transition: 0.2s;
+	}
+
+	.menu .menu_box .menu_card .small_card i:hover{
+		color: #fac031;
+	}
+
+	.menu .menu_box .menu_card .menu_info h2{
+		width: 60%;
+		text-align: center;
+		margin: 10px auto 10px auto;
+		font-size: 25px;
+		color: #fac031;
+	}
+
+	.menu .menu_box .menu_card .menu_info p{
+		text-align: center;
+		margin-top: 8px;
+		line-height: 21px;
+	}
+
+	.menu .menu_box .menu_card .menu_info h3{
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.menu .menu_box .menu_card .menu_info .menu_icon{
+		color: #fac031;
+		text-align: center;
+		margin: 10px 0 10px 0;
+	}
+
+	.menu .menu_box .menu_card .menu_info .menu_btn{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		color: white;
+		background: #000;
+		padding: 8px 10px;
+		margin: 0 80px;
+		transition: 0.3s;
+	}
+
+	/* Popup container */
+	.overlay {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(0, 0, 0, 0.7);
+	  z-index: 999;
+	  opacity: 0;
+	  visibility: hidden;
+	  transition: opacity 0.2s ease-in-out;
+	}
+
+	/* Popup content */
+	.popup {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  background: #fff;
+	  padding: 20px;
+	  border-radius: 5px;
+	}
+
+	/* Close button */
+	.close {
+	  position: absolute;
+	  top: 20px;
+	  right: 30px;
+	  font-size: 30px;
+	  color: #ffffff;
+	  text-shadow: 0px 1px #000;
+	  font-weight: bold;
+	}
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	/* Show the popup when the link is clicked */
+	.overlay:target {
+	  opacity: 1;
+	  visibility: visible;
+	}
+	
+	/*Contact*/
+
+	.contact{
+		position: relative;
+		min-height: 100vh;
+		padding: 50px 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.contact .content{
+		max-width: 800px;
+		text-align: center;
+	}
+	.contact .content h2{
+		font-family: 'Lucida Sans', 'Arial' , 'Poppins';
+		font-size: 36px;
+		font-weight: 500;
+		color:  #fff;
+	}
+	.contact .content h3{
+		font: 'Lucida Sans', 'Arial' , 'Poppins';
+		color:  #fff;
+	}
+	.contact .content p{
+		font-weight: 600;
+		color:  #fff;
+		font: 'Lucida Sans', 'Arial' , 'Poppins';
+	}
+	.container{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30px;
+	}
+	.container .contactInfo{
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+	.container .contactInfo .box{
+		position: relative;
+		padding: 20px 0;
+		display: flex;
+	}
+	.container .contactInfo .box .icon{
+		min-width: 60px;
+		height: 60px;
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		font-size: 22px;
+	}
+	.container .contactInfo .box .text{
+		display: flex;
+		margin-left: 20px;
+		font-size: 16px;
+		color: #fff;
+		flex-direction: column;
+		font-weight: 300;
+	}
+	.container .contactInfo .box .text .h3{
+		font-weight: 500;
+		color: #00bcd4;
+	}
+	.contactForm{
+		width: 40%;
+		padding: 40px;
+	}
+	.contactForm .h2{
+		font-size: 30px;
+		color: #333;
+		font-weight: 500;
+	}
+	.inputBox{
+		font-color: #fff;
+	}
+	.contactForm .inputBox{
+		position: relative;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.contactForm .inputBox input,
+	.contactForm .inputBox textarea{
+		color: #fff;
+		background-color: transparent;
+		width: 100%;
+		padding: 5px 0;
+		font-size: 16px;
+		font-weight: 600;
+		margin: 10px 0;
+		margin-bottom: 15px;                    
+		outline: none;
+		transition: all .3s ease;                
+	}
+	.btn{
+		background-color: #FE3DD8; 
+		border: none;
+		border-radius: 50px; 
+		color: white;
+		font-size: 16px;
+		padding: 12px 24px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	 table {
+		border: 1px solid black;
+		background-color: green;
+		width: 600px;
+		height: 200px;
+	}
+	th, td {
+		border: 1px solid black;
+		padding: 10px;
+		text-align: center;
+		color: white;
+	}
+	th{
+		background-color: violet;
+	  }
+	table{
+		border-collapse: collapse;
+		margin: 20px;
+	}
+
+	th, td{
+		padding: 10px;
+		border: 1px solid black
+	}
+	th{
+		background-color: violet;
+		text-align: center;
+	}
+
+	td{
+		text-align: center;
+	}
+
+	.table1{
+		float: left;
+		width: 40%;
+	}
+
+	caption{
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+
+ </style>
+  </head>
+  
+  <body onload="myFunction()" style="margin:0;">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" color: #ff0096;>
+    <img src="logonobg.png" alt="logonobg" id="logo">
+	
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+	
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ratings.html">Ratings</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="branches.html">Branches</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <ul>
+            
+
+    <br><br><br><br><div class="menu" id="Menu">
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                <a href="#popup1"><img src="product1.1.jpg"></a>
+                </div>
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <img src="whitebrew.jpeg">  
+                    <a class="close" href="#">×</a>
+                  </div>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Alta Re+Vive Serum</h2>
+                    <h3>P399.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="https://web.facebook.com/altaskinwhiteningsys" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+            <div class="menu_card">
+
+                <div class="menu_image">
+                <a href="#popup1"><img src="product2.jpg"></a>
+                </div>
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <img src="cortado.jpeg">  
+                    <a class="close" href="#">×</a>
+                  </div>
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Alta Day Cream SPF30</h2>
+                    <h3>P129.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="https://web.facebook.com/altaskinwhiteningsys" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+                <div class="menu_image">
+                <a href="#popup1"><img src="product3.jpg"></a>
+                </div>
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <img src="latte.jpeg">  
+                    <a class="close" href="#">×</a>
+                  </div>
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Alta Skin Brightening Soap 90g</h2>
+                    <h3>P125.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="https://web.facebook.com/altaskinwhiteningsys" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                <a href="#popup1"><img src="product4.jpg"></a>
+                </div>
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <img src="mocha.jpeg">  
+                    <a class="close" href="#">×</a>
+                  </div>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Alta Rejuvenating Toner 60ml</h2>
+                    <h3>P169.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="https://web.facebook.com/altaskinwhiteningsys" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                <a href="#popup1"><img src="product6.jpg"></a>
+                </div>
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <img src="oat.jpeg">  
+                    <a class="close" href="#">×</a>
+                  </div>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Alta Night Cream</h2>
+                    <h3>P125.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="https://web.facebook.com/altaskinwhiteningsys" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                <a href="#popup1"><img src="product5.jpg"></a>
+                </div>
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <img src="cappuccino.jpeg">  
+                    <a class="close" href="#">×</a>
+                  </div>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>AlTA COLLAGEN DRINK</h2>
+                    <h3>P398.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="https://web.facebook.com/altaskinwhiteningsys" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+     <div class="menu_card">
+
+                <div class="menu_image">
+                <a href="#popup1"><img src="product8.jpg"></a>
+                </div>
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <img src="cappuccino.jpeg">  
+                    <a class="close" href="#">×</a>
+                  </div>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>ALTA Lite Coffee Drink</h2>
+                    <h3>P398.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="https://web.facebook.com/altaskinwhiteningsys" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+			   <div class="menu_card">
+
+                <div class="menu_image">
+                <a href="#popup1"><img src="product9.png"></a>
+                </div>
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <img src="cappuccino.jpeg">  
+                    <a class="close" href="#">×</a>
+                  </div>
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>ALTA skin care set</h2>
+                    <h3>P398.00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="https://web.facebook.com/altaskinwhiteningsys" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            
+        </div>
+
+        </div>
+</body>
+</html>
